@@ -7,7 +7,7 @@
 
 function AppController(){
 var ctrl=this;
-ctrl.message= 'hello team';
+
 };
 
 })();
