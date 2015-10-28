@@ -20,9 +20,11 @@
   "dependencies": {
     "async": "^1.4.2",
     "bluebird": "^2.10.2",
+    "bower": "^1.6.5",
     "deployd": "^0.8.5",
     "dpd-event": "0.0.2",
     "dpd-event-extension": "0.0.3",
     "underscore": "^1.8.3"
-  }
+  },
+  "devDependencies": {}
 }
