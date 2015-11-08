@@ -2,14 +2,66 @@
 <html lang="en" ng-app="MyApp">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
   <title>GoSocialDev Course</title>
    <script src="bower_components/angular/angular.min.js"></script>
   <script src="app.js"></script>
-  
+   
+   <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+  <link rel="stylesheet" href="files/css/style.css">
+   
+     
 </head>
-<body ng-controller="AppController">
-  <h1>Hello team!</h1>
-  
+<body ng-controller="AppController as ctrl">
+
+
+ <header >
+   
+        
+         <h1>Todos</h1>
+         
+ </header>
+  <main>
+     <form>
+         <md-input-container>
+                <label for="message">Todo:</label>
+                <input type="text" placeholder="Insert Your Todo..." id="newTodo">
+
+                {{ctrl.todo}}
+
+         </md-input-container>
+     
+     
+     </form>
+     <section class="todoList">
+        <ul>
+            <li>
+                
+                    <input id="checkbox" type="checkbox" class="checkbox">
+                    <span class="text">Name</span>
+                    <button class="delete">x</button>
+                
+            </li>
+            
+           
+        </ul>
+         
+     </section>
+     
+     <footer class="toolBox">
+        <div class="itemsNumber">
+            3 items
+        </div>
+         <div layout="row" layout-align="center center" class="filters">
+              <div >All</div>
+              <div>Active</div>
+              <div>Completed</div>
+        </div>
+     </footer>
+      
+  </main>
+   
+   
   
   <script src="dpd.js"></script>
   <script src="bower_components/underscore/underscore-min.js"></script>
@@ -17,6 +69,8 @@
   <script src="bower_components/angular-animate/angular-animate.min.js"></script>
   <script src="bower_components/angular-aria/angular-aria.min.js"></script>
   <script src="bower_components/angular-material/angular-material.min.js"></script>
+
+	
   
 </body>
 </html>

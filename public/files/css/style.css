@@ -1,0 +1,139 @@
+*{
+margin:0px;
+padding:0px;
+outline:none;
+font-family:Arial;
+}
+
+body {
+font-size:14px
+}
+header  {
+background: linear-gradient(#7291D6,#5D7DC3,#4B6BB1);
+padding: 10px 3%;
+width: 94%;
+}
+
+header h1 {
+color:#F1F1F1}
+
+main {padding: 10px 3%;
+width: 94%;
+max-width: 480px;}
+
+.newTodo {    clear: left;
+
+
+
+height: 40px;
+
+border: 1px solid #E1E1E1;
+box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.23);
+border-radius: 5px;}
+
+
+ul {
+list-style: none;
+margin:0px;
+padding: 0px;
+
+}
+
+.todoList ul li {
+
+float:left;
+clear:both;
+width:100%;
+position:relative;
+border: 1px solid #E1E1E1;
+
+border-radius: 5px;
+padding:10px 0px;
+}
+
+.checkbox {
+text-align: center;
+width: 30px;
+height:30px;
+/* auto, since non-WebKit browsers doesn't support input styling */
+height: auto;
+float:left;
+margin: auto 0;
+border: none; /* Mobile Safari */
+-webkit-appearance: none;
+appearance: none;
+content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#ededed" stroke-width="3"/></svg>');
+margin-right: 10px;
+
+}
+
+
+
+.checkbox:checked {
+content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#bddad5" stroke-width="3"/><path fill="#5dc2af" d="M72 25L42 71 27 56l-4 4 20 20 34-52z"/></svg>');
+}
+
+
+.delete{
+background: none;
+border: 0;
+position: absolute;
+top: 2px;
+right: 10px;
+color: #B71515;
+font-weight: bold;
+}
+.text{    
+font-size: 19px;
+color: #446582;
+padding-right:25px;
+display: block;
+padding: 6px 25px 5px 0px;
+white-space: pre;
+word-break: break-word;}
+
+.toolBox {
+float: left;
+clear: both;
+width: 100%;
+border-left: 1px solid #E1E1E1;
+border-right: 1px solid #E1E1E1;
+border-bottom: 1px solid #E1E1E1;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+padding: 12px 0px;
+position: relative
+
+}
+
+.itemsNumber {    
+color: rgba(0, 0, 0, 0.55);
+margin-left:10px
+}
+
+.filters {
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100%;
+padding:7px 0px;
+color: rgba(0, 0, 0, 0.55);
+}
+
+.filters  div {
+padding:5px 1%;
+margin:0% 1%;
+cursor:pointer;
+border-radius: 3px;
+border:1px solid  rgba(225, 225, 225, 0);
+
+}
+
+.filters  div:hover {
+border:1px solid #E1E1E1;
+}
+
+.filters  div:active {
+border:1px solid #1E5465;
+}
+

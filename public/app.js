@@ -1,13 +1,17 @@
- (function(){
 
-      'use strict';
-     var app = angular.module('MyApp',['ngResource','ngAnimate','ngAria', 'ngMaterial'])
-            .controller('AppController',AppController);
+(function () {
+'use strict';
+     var app = angular.module('MyApp', ['ngMaterial', 'ngResource', 'ngAnimate', 'ngAria'])
+            .controller('AppController', AppController);
 
 
 function AppController(){
 var ctrl=this;
 
+ 
+  
 };
 
+      
+     
 })();
