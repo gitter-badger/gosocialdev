@@ -18,7 +18,7 @@
             <p ng-show="todo.completed">Active</p>
             <p ng-hide="todo.completed">Not active</p>
           </div>
-          <md-icon class="md-secondary" ng-click="ctrl.delete($index)" aria-label="Delete">D</md-icon>
+          <md-icon class="md-secondary" ng-click="ctrl.delete(todo)" aria-label="Delete">D</md-icon>
         </md-list-item>
       </md-list>
       <md-divider></md-divider>
@@ -47,6 +47,7 @@
   <script src="bower_components/angular-messages/angular-messages.min.js"></script>
   <script src="scripts/app.js"></script>
   <script src="scripts/Underscore.js"></script>
+  <script src="scripts/Products.js"></script>
 </body>
 
 </html>
